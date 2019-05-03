@@ -1,4 +1,5 @@
 #include "Point.h"
+#include "Figure.h"
 
 #include <iostream>
 #include <thread>
@@ -46,8 +47,24 @@ int main()
 		points[pnt].setZ(2.123f);
 	}
 		
-		
-	
+	Figure FIGURES[10] = {
+		Figure("0"),
+		Figure("1"),
+	    Figure("2"),
+	    Figure("3"),
+	    Figure("4"),
+	    Figure("5"),
+	    Figure("6"),
+	    Figure("7"),
+	    Figure("8"),
+	    Figure("9")
+	};
+	int prnt;
+	int num = 10;
+	for (prnt = 0; prnt < num; prnt++)
+	{
+		FIGURES[prnt].print();
+	}
 
 	int a;
 	std::cin >> a;
