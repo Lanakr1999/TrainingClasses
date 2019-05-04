@@ -69,3 +69,44 @@ void Point::print() const
 {
 	std::cout << "x = " << m_x << " y = " << m_y << " z = " << m_z << std::endl;
 }
+
+Point Point::operator+(const Point & p) const
+{
+	Point sum;
+	sum.m_x = m_x + p.m_x;
+	sum.m_y = m_y + p.m_y;
+	sum.m_z = m_z + p.m_z;
+	return sum;
+}
+
+Point Point::operator-(const Point & t) const
+{
+	Point result;
+	result.m_x = m_x - t.m_x;
+	result.m_y = m_y - t.m_y;
+	result.m_z = m_z - t.m_z;
+	return result;
+}
+
+Point Point::operator*(const float & t) const
+{
+	Point mult;
+	mult.m_x = m_x * t;
+	mult.m_y = m_y * t;
+	mult.m_z = m_z * t;
+	return mult;
+}
+
+Point Point::operator/(const float & t) const
+{
+	Point div;
+	div.m_x = m_x / t;
+	div.m_y = m_y / t;
+	div.m_z = m_z / t;
+	return div;
+}
+
+bool Point::operator==(const Point & p) const
+{
+	return (m_x == p.m_x) && (m_y == p.m_y) && (m_z == p.m_z);
+}

@@ -32,7 +32,14 @@ public:
 
 	void print() const;
 
+	Point operator+(const Point & p) const;
+	Point operator-(const Point & t) const;
+	Point operator*(const float & t) const;
+	Point operator/(const float & t) const;
+	bool operator==(const Point & p) const;
+
 private:
+
 	float m_x = 0.0f;
 
 	float m_y = 0.0f;

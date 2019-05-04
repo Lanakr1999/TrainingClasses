@@ -65,7 +65,24 @@ int main()
 	{
 		FIGURES[prnt].print();
 	}
-
+	std::cout << std::endl;
+	Point p10(1.1f, 1.1f, 1.1f);
+	p10.print();
+	Point p11(1.2f, 1.2f, 1.2f);
+	p11.print();
+	Point pSum = p10 + p11;
+	pSum.print();
+	Point pRes = p10 - p11;
+	pRes.print();
+	Point pMult = p10 * 2.0f;
+	pMult.print();
+	Point pDiv = p10 / 2.0f;
+	pDiv.print();
+	Point p12(1.1f, 1.1f, 1.1f);
+	std::cout << "p12 == p10 = " << (p12 == p10) << std::endl;
+	std::cout << "p12 == p11 = " << (p12 == p11) << std::endl;
+	
+	
 	int a;
 	std::cin >> a;
 

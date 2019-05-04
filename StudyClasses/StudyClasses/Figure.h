@@ -17,6 +17,7 @@ public:
 
 private:
 	std::string m_name = "";
+	const float pi = 3.14f;
 };
 
 #endif
