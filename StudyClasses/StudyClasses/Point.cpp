@@ -110,3 +110,23 @@ bool Point::operator==(const Point & p) const
 {
 	return (m_x == p.m_x) && (m_y == p.m_y) && (m_z == p.m_z);
 }
+
+bool Point::operator>(const Point & p) const
+{
+	return monhatanDistance() > p.monhatanDistance();
+}
+
+bool Point::operator<(const Point & p) const
+{
+	return monhatanDistance() < p.monhatanDistance();
+}
+
+bool Point::operator>=(const Point & p) const
+{
+	return monhatanDistance() >= p.monhatanDistance();
+}
+
+bool Point::operator<=(const Point & p) const
+{
+	return monhatanDistance() <= p.monhatanDistance();
+}

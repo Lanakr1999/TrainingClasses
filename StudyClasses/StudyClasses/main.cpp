@@ -68,7 +68,7 @@ int main()
 	std::cout << std::endl;
 	Point p10(1.1f, 1.1f, 1.1f);
 	p10.print();
-	Point p11(1.2f, 1.2f, 1.2f);
+	Point p11(1.0f, 1.0f, 1.9f);
 	p11.print();
 	Point pSum = p10 + p11;
 	pSum.print();
@@ -81,6 +81,7 @@ int main()
 	Point p12(1.1f, 1.1f, 1.1f);
 	std::cout << "p12 == p10 = " << (p12 == p10) << std::endl;
 	std::cout << "p12 == p11 = " << (p12 == p11) << std::endl;
+	std::cout << "p12 > p11 = " << (p12 > p11) << std::endl;
 	
 	
 	int a;

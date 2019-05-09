@@ -37,6 +37,10 @@ public:
 	Point operator*(const float & t) const;
 	Point operator/(const float & t) const;
 	bool operator==(const Point & p) const;
+	bool operator>(const Point & p) const;
+	bool operator<(const Point & p) const;
+	bool operator>=(const Point & p) const;
+	bool operator<=(const Point & p) const;
 
 private:
 
