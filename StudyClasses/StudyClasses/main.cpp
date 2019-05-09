@@ -82,7 +82,17 @@ int main()
 	std::cout << "p12 == p10 = " << (p12 == p10) << std::endl;
 	std::cout << "p12 == p11 = " << (p12 == p11) << std::endl;
 	std::cout << "p12 > p11 = " << (p12 > p11) << std::endl;
-	
+	Point p13(1.0f, 1.0f, 3.0f);
+	float s = p13 * 5.0f;
+	std::cout << "Point s = p13 * 5 = " << s << std::endl;
+	Point p14(5.12);
+	Point p15 = Point(std::string("aaa"));
+	p14.print();
+
+	Point p16 = Point::center;
+	p16.print();
+
+	Point::zeroPoint().print();
 	
 	int a;
 	std::cin >> a;

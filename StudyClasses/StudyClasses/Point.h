@@ -10,7 +10,9 @@ public:
 
 	Point(float x, float y, float z);
 
-	Point(std::string name);
+	explicit Point(std::string name);
+
+	explicit Point(float value);
 
 	~Point();
 
@@ -33,14 +35,19 @@ public:
 	void print() const;
 
 	Point operator+(const Point & p) const;
-	Point operator-(const Point & t) const;
-	Point operator*(const float & t) const;
-	Point operator/(const float & t) const;
+	Point operator-(const Point & p) const;
+	Point operator*(const float & p) const;
+	Point operator/(const float & p) const;
 	bool operator==(const Point & p) const;
 	bool operator>(const Point & p) const;
 	bool operator<(const Point & p) const;
 	bool operator>=(const Point & p) const;
 	bool operator<=(const Point & p) const;
+	operator float() const;
+
+	static Point center;
+
+	static Point zeroPoint();
 
 private:
 
@@ -51,6 +58,7 @@ private:
 	float m_z = 0.0f;
 
 	std::string m_name = "";
+
 };
 
 #endif

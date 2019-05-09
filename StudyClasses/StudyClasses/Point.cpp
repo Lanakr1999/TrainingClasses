@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+Point Point::center(0.0f, 0.0f, 0.0f);
+
 Point::Point()
 {
 }
@@ -17,6 +19,13 @@ Point::Point(std::string name)
 {
 	m_name = name;
 	std::cout << "Point " << m_name << " created" << std::endl;
+}
+
+Point::Point(float value)
+{
+	m_x = value;
+	m_y = value;
+	m_z = value;
 }
 
 Point::~Point()
@@ -79,30 +88,30 @@ Point Point::operator+(const Point & p) const
 	return sum;
 }
 
-Point Point::operator-(const Point & t) const
+Point Point::operator-(const Point & p) const
 {
 	Point result;
-	result.m_x = m_x - t.m_x;
-	result.m_y = m_y - t.m_y;
-	result.m_z = m_z - t.m_z;
+	result.m_x = m_x - p.m_x;
+	result.m_y = m_y - p.m_y;
+	result.m_z = m_z - p.m_z;
 	return result;
 }
 
-Point Point::operator*(const float & t) const
+Point Point::operator*(const float & p) const
 {
 	Point mult;
-	mult.m_x = m_x * t;
-	mult.m_y = m_y * t;
-	mult.m_z = m_z * t;
+	mult.m_x = m_x * p;
+	mult.m_y = m_y * p;
+	mult.m_z = m_z * p;
 	return mult;
 }
 
-Point Point::operator/(const float & t) const
+Point Point::operator/(const float & p) const
 {
 	Point div;
-	div.m_x = m_x / t;
-	div.m_y = m_y / t;
-	div.m_z = m_z / t;
+	div.m_x = m_x / p;
+	div.m_y = m_y / p;
+	div.m_z = m_z / p;
 	return div;
 }
 
@@ -130,3 +139,14 @@ bool Point::operator<=(const Point & p) const
 {
 	return monhatanDistance() <= p.monhatanDistance();
 }
+
+Point::operator float() const
+{
+	return distance();
+}
+
+Point Point::zeroPoint()
+{
+	return Point(0.0f, 0.0f, 0.0f);
+}
+

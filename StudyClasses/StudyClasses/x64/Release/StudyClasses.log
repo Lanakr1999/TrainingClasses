@@ -1,7 +1,9 @@
 ﻿  Point.cpp
+  main.cpp
+e:\openglprog\c++training\trainingclasses\studyclasses\studyclasses\main.cpp(88): warning C4305: аргумент: усечение из "double" в "float"
   Создание кода
-  0 of 103 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  4 of 108 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    4 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   StudyClasses.vcxproj -> E:\OpenGLProg\C++Training\TrainingClasses\StudyClasses\x64\Release\StudyClasses.exe
