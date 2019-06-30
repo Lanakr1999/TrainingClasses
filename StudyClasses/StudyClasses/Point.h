@@ -10,6 +10,10 @@ public:
 
 	Point(float x, float y, float z);
 
+	Point(const Point& other);
+
+	Point & operator=(const Point& other);
+
 	explicit Point(std::string name);
 
 	explicit Point(float value);

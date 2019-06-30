@@ -9,14 +9,19 @@ public:
 
 	Figure(std::string x);
 
-	std::string figure() const;
+	Figure(const Figure& other);
 
-	void setFigure(std::string x);
+	Figure & operator=(const Figure& other);
+
+	std::string name() const;
+
+	void setName(std::string x);
 
 	void print() const;
 
 private:
 	std::string m_name = "";
+
 	const float pi = 3.14f;
 };
 

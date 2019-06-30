@@ -85,7 +85,8 @@ int main()
 	Point p13(1.0f, 1.0f, 3.0f);
 	float s = p13 * 5.0f;
 	std::cout << "Point s = p13 * 5 = " << s << std::endl;
-	Point p14(5.12);
+	//Point pTemp = 5.12f; // impossible for explicit constructors
+	Point p14(5.12f);
 	Point p15 = Point(std::string("aaa"));
 	p14.print();
 
@@ -93,6 +94,16 @@ int main()
 	p16.print();
 
 	Point::zeroPoint().print();
+
+	std::cout << std::endl << std::endl << std::endl;
+	Point p21(2.0f, 2.2f, 2.0f);
+	p21.print();
+	Point p22 = p21;
+	p22.print();
+	Point p23(0.1f, 0.2f, 0.3f);
+	p23 = p22;
+	p23.print();
+	Point p24(p23);
 	
 	int a;
 	std::cin >> a;

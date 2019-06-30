@@ -15,6 +15,23 @@ Point::Point(float x, float y, float z)
 	m_z = z;
 }
 
+Point::Point(const Point& other)
+{
+	std::cout << "Copy construct working" << std::endl;
+	m_x = other.x();
+	m_y = other.y();
+	m_z = other.z();
+}
+
+Point& Point::operator=(const Point & other)
+{
+	std::cout << "Assignment operator working" << std::endl;
+	m_x = other.x();
+	m_y = other.y();
+	m_z = other.z();
+	return *this;
+}
+
 Point::Point(std::string name)
 {
 	m_name = name;

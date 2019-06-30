@@ -11,12 +11,24 @@ Figure::Figure(std::string name)
 	std::cout << "Point " << m_name << " created" << std::endl;
 }
 
-std::string Figure::figure() const
+Figure::Figure(const Figure & other)
+{
+	m_name = other.name();
+}
+
+Figure & Figure::operator=(const Figure & other)
+{
+	m_name = other.name();
+	return *this;
+	// TODO: вставьте здесь оператор return
+}
+
+std::string Figure::name() const
 {
 	return m_name;
 }
 
-void Figure::setFigure(std::string x)
+void Figure::setName(std::string x)
 {
 	x = m_name;
 }
