@@ -2,6 +2,7 @@
 #define FIGURE_H_
 
 #include <string>
+
 class Figure
 {
 public:

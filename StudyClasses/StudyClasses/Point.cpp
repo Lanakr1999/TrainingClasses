@@ -8,11 +8,9 @@ Point::Point()
 {
 }
 
-Point::Point(float x, float y, float z)
+Point::Point(float x, float y, float z) : m_x(x), m_y(y), m_z(z)
 {
-	m_x = x;
-	m_y = y;
-	m_z = z;
+	
 }
 
 Point::Point(const Point& other)
