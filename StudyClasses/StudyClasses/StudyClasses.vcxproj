@@ -115,13 +115,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="ClosedPolyline.cpp" />
+    <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OrientedRectangle.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="RegularPolygon.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="ClosedPolyline.h" />
+    <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Figure.h" />
+    <ClInclude Include="OrientedRectangle.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="RegularPolygon.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

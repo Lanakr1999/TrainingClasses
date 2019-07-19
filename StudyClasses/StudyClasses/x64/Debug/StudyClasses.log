@@ -1,4 +1,9 @@
-﻿  Point.cpp
-  main.cpp
+﻿  Circle.cpp
+  ClosedPolyline.cpp
+  Ellipse.cpp
+  Figure.cpp
+  OrientedRectangle.cpp
+  RegularPolygon.cpp
+  Triangle.cpp
   Создание кода...
   StudyClasses.vcxproj -> E:\OpenGLProg\C++Training\TrainingClasses\StudyClasses\x64\Debug\StudyClasses.exe

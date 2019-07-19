@@ -1,5 +1,11 @@
 #include "Point.h"
 #include "Figure.h"
+#include "Circle.h"
+#include "ClosedPolyline.h"
+#include "Ellipse.h"
+#include "OrientedRectangle.h"
+#include "RegularPolygon.h"
+#include "Triangle.h"
 
 #include <iostream>
 #include <thread>
@@ -105,6 +111,22 @@ int main()
 	p23.print();
 	Point p24(p23);
 	
+	{
+		std::cout << "\n\n";
+		Circle circle("circle");
+		circle.print();
+		ClosedPolyline closedPolyline("closedPolyline");
+		closedPolyline.print();
+		Ellipse ellipse("ellipse");
+		ellipse.print();
+		OrientedRectangle orientedRectangle("orientedRectangle");
+		orientedRectangle.print();
+		RegularPolygon regularPolygon("regularPolygon");
+		regularPolygon.print();
+		Triangle triangle("triangle");
+		triangle.print();
+	}
+
 	int a;
 	std::cin >> a;
 

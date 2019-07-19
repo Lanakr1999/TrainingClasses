@@ -8,6 +8,8 @@ class Figure
 public:
 	Figure();
 
+	~Figure();
+
 	Figure(std::string x);
 
 	Figure(const Figure& other);
@@ -19,6 +21,10 @@ public:
 	void setName(std::string x);
 
 	void print() const;
+
+	float perimetr();
+
+	float area();
 
 private:
 	std::string m_name = "";

@@ -5,10 +5,16 @@ Figure::Figure()
 {
 }
 
+Figure::~Figure()
+{
+	
+	std::cout << "Figure " << m_name << " deleted" << std::endl;
+}
+
 Figure::Figure(std::string name)
 {
 	m_name = name;
-	std::cout << "Point " << m_name << " created" << std::endl;
+	std::cout << "Figure " << m_name << " created" << std::endl;
 }
 
 Figure::Figure(const Figure & other)
@@ -36,4 +42,14 @@ void Figure::setName(std::string x)
 void Figure::print() const
 {
 	std::cout << "Figure name: " << m_name << std::endl;
+}
+
+float Figure::perimetr()
+{
+	return 0.0f;
+}
+
+float Figure::area()
+{
+	return 0.0f;
 }
