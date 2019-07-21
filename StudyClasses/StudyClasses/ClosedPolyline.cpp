@@ -12,6 +12,11 @@ ClosedPolyline::ClosedPolyline(std::string name)
 	std::cout << "ClosedPolyline " << name << " created" << std::endl;
 }
 
+void ClosedPolyline::print() const
+{
+	std::cout << "ClosedPolyline name " << name() << std::endl;
+}
+
 
 ClosedPolyline::~ClosedPolyline()
 {

@@ -20,7 +20,7 @@ public:
 
 	void setName(std::string x);
 
-	void print() const;
+	virtual void print() const;
 
 	float perimetr();
 

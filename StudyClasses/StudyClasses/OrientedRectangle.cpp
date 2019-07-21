@@ -13,6 +13,11 @@ OrientedRectangle::OrientedRectangle(std::string name)
 	std::cout << "OrientedRectangle " << name << " created" << std::endl;
 }
 
+void OrientedRectangle::print() const
+{
+	std::cout << "OrientedRectangle name " << name() << std::endl;
+}
+
 
 OrientedRectangle::~OrientedRectangle()
 {

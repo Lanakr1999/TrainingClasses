@@ -13,6 +13,10 @@
 
 using namespace std::chrono_literals;
 
+Figure* createFigure(int index);
+
+int randomFrom1to5();
+
 int main()
 {
 	Point p1;
@@ -125,10 +129,62 @@ int main()
 		regularPolygon.print();
 		Triangle triangle("triangle");
 		triangle.print();
+		std::cout << std::endl << std::endl;
+	}
+
+	Figure *figures[30];
+	for (int i = 0; i < 30; i++)
+	{
+		auto indexA = randomFrom1to5();
+		auto figure = createFigure(indexA);
+		figures[i] = createFigure(indexA);
+	}
+	std::cout << "\n\n";
+	for (int i = 0; i < 30; i++)
+	{
+		figures[i]->print();
 	}
 
 	int a;
 	std::cin >> a;
 
 	return 0;
+}
+
+int randomFrom1to5()
+{
+	return std::rand() % 6;
+}
+
+Figure * createFigure(int index)
+{
+	if (index == 0) 
+	{
+		return new Circle ("circle");
+	}
+	else if (index == 1)
+	{
+		return new ClosedPolyline ("closedPolyline");
+	}
+	else if (index == 2)
+	{
+		return new Ellipse ("ellipse");
+	}
+	else if (index == 3)
+	{
+		return new OrientedRectangle ("orientedRectangle");
+	}
+	else if (index == 4)
+	{
+		return new RegularPolygon ("regularPolygon");
+	}
+	else if (index == 5)
+	{
+		return new Triangle ("triangle");
+	}
+	else
+	{
+		std::cout << "Try again" << std::endl;
+	}
+	return nullptr;
 }

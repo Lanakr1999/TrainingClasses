@@ -11,6 +11,8 @@ public:
 
 	Ellipse(std::string name);
 
+	void print() const override;
+
 	~Ellipse();
 };
 

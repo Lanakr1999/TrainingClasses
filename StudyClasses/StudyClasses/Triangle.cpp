@@ -12,6 +12,11 @@ Triangle::Triangle(std::string name)
 	std::cout << "Triangle " << name << " created" << std::endl;
 }
 
+void Triangle::print() const
+{
+	std::cout << "Triangle name " << name() << std::endl;
+}
+
 
 Triangle::~Triangle()
 	

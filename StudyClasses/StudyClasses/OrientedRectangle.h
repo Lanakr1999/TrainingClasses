@@ -10,6 +10,8 @@ public:
 
 	OrientedRectangle(std::string name);
 
+	void print() const override;
+
 	~OrientedRectangle();
 };
 

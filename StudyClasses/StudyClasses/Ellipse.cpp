@@ -12,6 +12,11 @@ Ellipse::Ellipse(std::string name)
 	std::cout << "Ellipse " << name << " created" << std::endl;
 }
 
+void Ellipse::print() const
+{
+	std::cout << "Ellipse name " << name() << std::endl;
+}
+
 
 Ellipse::~Ellipse()
 {

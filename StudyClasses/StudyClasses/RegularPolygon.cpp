@@ -12,6 +12,10 @@ RegularPolygon::RegularPolygon(std::string name)
 	std::cout << "RegularPolygon " << name << " created" << std::endl;
 }
 
+void RegularPolygon::print() const
+{
+	std::cout << "RegularPolygon name " << name() << std::endl;
+}
 
 RegularPolygon::~RegularPolygon()
 {

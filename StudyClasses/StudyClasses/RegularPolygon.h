@@ -10,6 +10,8 @@ public:
 
 	RegularPolygon(std::string name);
 
+	void print() const override;
+
 	~RegularPolygon();
 };
 

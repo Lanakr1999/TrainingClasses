@@ -11,6 +11,8 @@ public:
 
 	ClosedPolyline(std::string name);
 
+	void print() const override;
+
 	~ClosedPolyline();
 };
 

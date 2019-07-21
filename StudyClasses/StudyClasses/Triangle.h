@@ -10,6 +10,8 @@ public:
 
 	Triangle(std::string name);
 
+	void print() const override;
+
 	~Triangle();
 };
 
