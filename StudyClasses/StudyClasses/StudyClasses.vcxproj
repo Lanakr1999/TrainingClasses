@@ -119,6 +119,7 @@
     <ClCompile Include="ClosedPolyline.cpp" />
     <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="FigureFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OrientedRectangle.cpp" />
     <ClCompile Include="Point.cpp" />
@@ -130,6 +131,7 @@
     <ClInclude Include="ClosedPolyline.h" />
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Figure.h" />
+    <ClInclude Include="FigureFactory.h" />
     <ClInclude Include="OrientedRectangle.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="RegularPolygon.h" />
