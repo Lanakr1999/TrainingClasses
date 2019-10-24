@@ -1,0 +1,3 @@
+﻿  main.cpp
+EnemyNPC.obj : error LNK2001: неразрешенный внешний символ ""public: __cdecl NPC::NPC(void)" (??0NPC@@QEAA@XZ)"
+E:\OpenGLProg\C++Training\TryingCreatingGames\FirstGame\x64\Release\FirstGame.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

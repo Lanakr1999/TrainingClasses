@@ -1,0 +1,2 @@
+﻿Enemy.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __cdecl NPC::NPC(void)" (??0NPC@@QEAA@XZ) в функции "public: __cdecl Enemy::Enemy(void)" (??0Enemy@@QEAA@XZ)
+E:\OpenGLProg\C++Training\TryingCreatingGames\FirstGame\x64\Debug\FirstGame.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

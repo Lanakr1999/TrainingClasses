@@ -1,0 +1,11 @@
+﻿  Door.cpp
+  Main.cpp
+  MapSite.cpp
+  Maze.cpp
+  MazeFactory.cpp
+  Room.cpp
+  Wall.cpp
+  Создание кода
+  All 8 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  AbstractFactory.vcxproj -> E:\OpenGLProg\C++Training\TrainingClasses\AbstractFactory\x64\Release\AbstractFactory.exe
